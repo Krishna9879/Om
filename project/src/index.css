@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-black text-white;
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
+}
+
+.cursor {
+  transition: transform 0.1s ease;
+}
+
+.cursor-follower {
+  transition: transform 0.3s ease;
+}
+
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+  transform: scale(2);
+}
